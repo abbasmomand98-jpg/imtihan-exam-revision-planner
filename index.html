@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imtihan — Exam Revision Planner (UX Concept)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">I</span><strong>Imtihan</strong></div>
+  <p class="tagline">Midterm revision · sample plan</p>
+</header>
+
+<main>
+  <section class="hero" aria-label="Next paper">
+    <p class="eyebrow">NEXT PAPER</p>
+    <h1 id="nextPaperSubject">Data Structures</h1>
+    <p id="nextPaperMeta">—</p>
+    <div class="hero-ring"><span id="nextPaperRing">0%</span><small>revised</small></div>
+    <p class="sample-note">SAMPLE DATA — all papers, dates and topics are invented for this demo.</p>
+  </section>
+
+  <section class="panel" aria-label="Paper countdown">
+    <h2>Your papers</h2>
+    <p class="muted">6 papers · revision in progress</p>
+    <label class="field-label" for="searchInput">Search papers</label>
+    <input id="searchInput" type="search" placeholder="Search a subject, e.g. Automata">
+    <div id="paperList" class="paper-list"></div>
+  </section>
+
+  <section class="panel" aria-label="Revision planner">
+    <h2>Revision planner</h2>
+    <h3 id="detailSubject">Data Structures</h3>
+    <p class="muted" id="detailMeta">—</p>
+    <p id="progressText">—</p>
+    <div class="progress-track"><div id="progressFill" class="progress-fill"></div></div>
+    <div id="topicList" class="topic-list"></div>
+
+    <div class="timer-card">
+      <p class="eyebrow">FOCUS TIMER · POMODORO</p>
+      <p id="timerDisplay" class="timer">25:00</p>
+      <p id="timerTopic" class="muted">Now revising</p>
+      <div class="timer-actions">
+        <button id="timerStart" type="button" class="btn-primary">Start</button>
+        <button id="timerReset" type="button" class="btn-ghost">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Past-paper bank">
+    <h2 id="bankSubject">Past-paper bank</h2>
+    <label class="field-label" for="pastPaperSearch">Filter by year</label>
+    <input id="pastPaperSearch" type="search" placeholder="e.g. 2024">
+    <div id="pastPaperList" class="bank-list"></div>
+    <div class="last-night">
+      <p class="eyebrow">LAST-NIGHT REVISION CARD</p>
+      <p id="lastNightText">—</p>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Paper-day kit">
+    <h2 id="kitSubject">Paper-day kit</h2>
+    <p class="muted" id="kitProgress">—</p>
+    <div id="kitList" class="topic-list"></div>
+    <p class="sample-note">Pack tonight, walk in calm. No real roll number, ID or phone number is used anywhere here.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Imtihan — a UX concept by Abbas Momand. All data on this page is sample data.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
