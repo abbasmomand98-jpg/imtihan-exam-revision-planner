@@ -58,3 +58,4 @@ whatever your exam day actually needs — the structure stays the same.
 - `test.js` — smoke test (run `node test.js`)
 
 Open `index.html` in any browser — no build step, no framework, no server.
+Live demo: https://abbasmomand98-jpg.github.io/imtihan-exam-revision-planner/
